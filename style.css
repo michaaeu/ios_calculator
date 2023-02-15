@@ -3,12 +3,11 @@
     padding: 0;
 }
 
-html {
-    background-color: #272727;
-    color: white;
-}
 
 body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bol;
+    color: whitesmoke;
     background-color: #272727;
     height: 100vh;
     width: 100vw;
@@ -18,30 +17,81 @@ body {
 }
 
 .calculator {
-    padding: -20px;
-    /* border: solid 1px; */
-    background-color: #151515;
-    border-radius: 70px;
+    /* SIZE */
     width: 370px;
     height: 750px;
-    display: flex;
-    flex-direction: column;
+    padding: -20px;
+    /* MOCKUP BACKGROUND */
     background-image: url("resources/ip14max.png");
     background-position: center;
     background-repeat: no-repeat;
-    margin: 25px ;
+    background-color: #020202;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
 }
 
 .screen_area {
-    /* border: solid 1px red; */
-    width: 100%;
-    flex-grow: 1;
-    /* margin: 15px; */
+    border: solid 1px rgba(255, 255, 255, 20%);
+    text-align: right;
+    flex-grow: 3;
+    padding-right: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.numbers_area {
+    font-size: 85px;
 }
 
 .buttons_area {
-    /* border: solid 1px blue; */
-    width: 100%;
-    flex-grow: 2;
-    /* margin: 15px; */
+    border: solid 1px rgba(255, 255, 255, 20%);
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* BUTTONS */
+button {
+    font-size: 25px;
+    color: whitesmoke;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 0px;
+}
+
+/* BUTTON GREY */
+.button_grey {
+    background-color: #313131;
+}
+
+.button_grey:hover {
+    filter: brightness(150%);
+}
+
+/* BUTTON LIGHT GREY */
+.button_light_grey {
+    background-color: #9F9F9F;
+    color: #313131;
+}
+
+.button_light_grey:hover {
+    filter: brightness(125%);
+}
+
+/* BUTTON ORANGE */
+.button_orange {
+    background-color: #F69A06;
+}
+
+.button_orange:hover {
+    filter: brightness(120%);
 }
