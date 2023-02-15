@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #272727;
+    color: white;
+}
+
+body {
+    background-color: #272727;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    padding: -20px;
+    /* border: solid 1px; */
+    background-color: #151515;
+    border-radius: 70px;
+    width: 370px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("resources/ip14max.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 25px ;
+}
+
+.screen_area {
+    /* border: solid 1px red; */
+    width: 100%;
+    flex-grow: 1;
+    /* margin: 15px; */
+}
+
+.buttons_area {
+    /* border: solid 1px blue; */
+    width: 100%;
+    flex-grow: 2;
+    /* margin: 15px; */
+}
