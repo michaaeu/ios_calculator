@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 
@@ -20,20 +21,18 @@ body {
     /* SIZE */
     width: 370px;
     height: 750px;
-    padding: -20px;
     /* MOCKUP BACKGROUND */
     background-image: url("resources/ip14max.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: #020202;
     border-radius: 70px;
+    /* FLEX */
     display: flex;
     flex-direction: column;
-    margin: 25px;
 }
 
 .screen_area {
-    border: solid 1px rgba(255, 255, 255, 20%);
     text-align: right;
     flex-grow: 3;
     padding-right: 40px;
@@ -47,7 +46,6 @@ body {
 }
 
 .buttons_area {
-    border: solid 1px rgba(255, 255, 255, 20%);
     flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(4, 70px);
